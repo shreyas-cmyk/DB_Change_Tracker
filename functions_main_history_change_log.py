@@ -11,7 +11,7 @@ scope = [
 ]
 
 creds = ServiceAccountCredentials.from_json_keyfile_name(
-r"C:\Users\RNXT_Shreya\Downloads\still-fact-466904-i7-22099d8cad5c.json",
+"Enter your credentials",
 scope
 )
 
@@ -40,9 +40,7 @@ df = df.astype(str)
 
 # ---------------- POSTGRES CONNECTION ----------------
 conn_string = (
-"postgresql://neondb_owner:npg_GaKJj6dU7cXB@"
-"ep-broad-shape-ai2p3a5s-pooler.c-4.us-east-1.aws.neon.tech/"
-"neondb?sslmode=require&channel_binding=require"
+"Enter your DB link"
 )
 
 engine = create_engine(conn_string)
